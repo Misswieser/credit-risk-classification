@@ -32,7 +32,7 @@ The results of confusion matrix indicates that the healthy loans ('0') label, ha
 The results for the high-risk loans ('1') label, indicted the predicted true positives are 461 for high risk loans, and the incorrectly predicted false negatives are 46 healthy loans as high-risk loans.
 The confusion matrix of the original logistic regression model, indicates a low number of false positives of 46 healthy loans is identified as high-risk loans, and the matrix indicates the false negatives of 75 high-risk loans as healthy loans. 
 
-Additionally, the classification report provides detailed insights into the logistic regression model's performance for each '0' (healthy loan) and '1' (high-risk loan) labels. The report includes metrics such as precision, recall, f1-score, and support for each label, along with acuracy of macro and weighted averages.
+Additionally, the classification report provides detailed insights into the logistic regression model's performance for each '0' (healthy loan) and '1' (high-risk loan) labels. The report includes metrics such as precision, recall, f1-score, and support for each label, along with acuracy of macro and weighted averages. As shown above the precision of 1.00 for healthy loans and 0.86 for high-risk loans, and the recall of 1.00 for healthy loans and 0.91 for high-risk loans.
 
 
 # Logistic Regression with Resample model:
@@ -56,7 +56,9 @@ The results for the high-risk loans ('1') label, indicates the predicted true po
 The confusion matrix of the logistic regression model with resampled data demonstrates a significantly lower number of false positives compared to the original model. Specifically, the resampled model identifies only 3 healthy loans as high-risk loans, whereas the original model incorrectly identifies 46 healthy loans as high-risk loans. This indicates that the model with resampled data effectively reduces the occurrence of false positives.
 On the other hand, the logistic regression model with resampled data shows an increase in false negatives compared to the original model. The resampled model identifies 86 high-risk loans as healthy loans, whereas the original model incorrectly identifies 75 high-risk loans as healthy loans. This suggests that the model with resampled data has a higher tendency to misclassify high-risk loans as healthy loans compared to the original model.
 
-The classification report of logistic regression with resample model has a stronger perdictive performance after oversampling the data than the original model's classification report.
+The classification report of logistic regression with resample model has a stronger perdictive performance after oversampling the data than the original model's classification report. As shown above, the precision of 1.00 for healthy loans and 0.85 for high-risk loans, and recall of 0.99 for both healthy loans and high-risk loans.
+
+Comparing the classification report on both models, on the precision score there is a slight difference between the two models, and both show high precision values overall. However, on the recall score logistic regression with resample has the significant advantage as it demonstrates the most value count on healthy loans and high-risk loans. 
 
 # Recommendation
 
